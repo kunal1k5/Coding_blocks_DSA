@@ -1,0 +1,35 @@
+package Arrays;
+import java.util.*;
+public class Longest_Consecutive_Sequence128 {
+    public static void main(String[] args) {
+        int arr[] ={0,3,7,2,5,8,4,6,0,1};
+
+        System.out.println(longestConsecutive(arr));
+        
+    }
+
+    public static int longestConsecutive(int[] nums) {
+        if(nums.length == 0){
+            return 0;
+        }
+        Arrays.sort(nums);
+        int n = nums.length;
+        int count = 1;
+        int lastSmaller = nums[0];
+        int longest = 1;
+
+        for(int i=0; i<n; i++){
+            if(nums[i]-1 == lastSmaller){
+                count++;
+                lastSmaller = nums[i];
+            }
+
+            else if(nums[i] != lastSmaller){
+                count = 1;
+                lastSmaller = nums[i];
+            }
+            longest = Math.max(longest,count);
+        }
+        return longest;
+    }
+}
