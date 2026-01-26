@@ -21,7 +21,7 @@
 //             }
             
 //         }
-//         int Sec_Larg = arr[0];
+//         int Sec_Larg = -1;
 //         for( int i=0; i<n; i++){
 //             if(arr[i] > Sec_Larg && arr[i] < largest){
 //                 Sec_Larg = arr[i];

@@ -25,5 +25,9 @@ public class first_bad_version {
         }
         return ans;
     }
+
+    private static boolean isBadVersion(int mid) {
+        
+    }
     
 }
