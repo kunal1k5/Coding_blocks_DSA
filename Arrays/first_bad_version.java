@@ -27,7 +27,9 @@ public class first_bad_version {
     }
 
     private static boolean isBadVersion(int mid) {
-        
+        // Dummy implementation for testing; replace with actual logic or API call
+        int firstBadVersion = 4; // example value
+        return mid >= firstBadVersion;
     }
     
 }
