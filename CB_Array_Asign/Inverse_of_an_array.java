@@ -14,11 +14,12 @@ public class Inverse_of_an_array {
             arr[i] = sc.nextInt();
         }
         // int[] arr = {0,2,1,4,3};
-
-        inverse(arr, 1, arr.length-1);
+        int i = sc.nextInt();
+        int j = sc.nextInt();
+        inverse(arr, i, j);
         
-        for(int i =0; i<arr.length; i++){
-            System.out.print(arr[i] + " ");
+        for(int k =0; k<arr.length; k++){
+            System.out.print(arr[k] + " ");
         }
         
     }
