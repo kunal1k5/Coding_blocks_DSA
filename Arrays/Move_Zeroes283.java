@@ -24,16 +24,24 @@ public class Move_Zeroes283 {
         //     }
         // }
 
-        int j =0;
+        // int j =0;
 
-        for(int i=j+1; i<arr.length; i++){
-            if(arr[i] != 0 ){
-                if(i != j){
-                int temp = arr[j];
-                arr[j] = arr[i];
-                arr[i] = temp;
+        // for(int i=j+1; i<arr.length; i++){
+        //     if(arr[i] != 0 ){
+        //         if(i != j){
+        //         int temp = arr[j];
+        //         arr[j] = arr[i];
+        //         arr[i] = temp;
+        //         j++;
+        //         }
+        //     }
+        // }
+        int j =0;
+        int[] temp = new int[arr.length];
+        for(int i=0; i<arr.length; i++){
+            if(arr[i] !=0){
+                temp[j] = arr[i];
                 j++;
-                }
             }
         }
     }
